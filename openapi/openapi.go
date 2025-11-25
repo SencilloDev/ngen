@@ -61,18 +61,16 @@ func (o OpenAPI) Convert(info []byte) ([]byte, error) {
 			o.Paths[path] = map[string]any{}
 		}
 
-		o.Paths[path] = map[string]any{
-			method: map[string]any{
-				"tags":        []string{v.QueueGroup},
-				"summary":     v.Metadata.Description,
-				"description": v.Metadata.Description,
-				"responses": map[string]any{
-					"200": map[string]any{
-						"description": "Success",
-						"content": map[string]any{
-							v.Metadata.Format: map[string]any{
-								"schema": inlineSchema,
-							},
+		o.Paths[path][method] = map[string]any{
+			"tags":        []string{v.QueueGroup},
+			"summary":     v.Metadata.Description,
+			"description": v.Metadata.Description,
+			"responses": map[string]any{
+				"200": map[string]any{
+					"description": "Success",
+					"content": map[string]any{
+						v.Metadata.Format: map[string]any{
+							"schema": inlineSchema,
 						},
 					},
 				},
@@ -90,7 +88,6 @@ func (o OpenAPI) Convert(info []byte) ([]byte, error) {
 			}
 		}
 		o.Paths[path]["parameters"] = parameters
-
 	}
 
 	return yaml.Marshal(o)
