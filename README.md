@@ -7,21 +7,21 @@ This is a poc to take NATS micro information and generate a d2 diagram of subjec
 
 ### Usage
 
-Generate SVG file
+#### Generate SVG file
 
 `ngen generate diagram -n sample -i nbmBYG4zjSTFbnvGsYEZ97`
 
-Print diagram to stdout 
+#### Print diagram to stdout 
 
 `ngen generate diagram -n sample -i nbmBYG4zjSTFbnvGsYEZ97 -p`
 
-Animate edges
+#### Animate edges
 
 `ngen generate diagram -n sample -i nbmBYG4zjSTFbnvGsYEZ97 -p --animate`
 
 ### Sample
 
-This is what the above diagram would look like (click image to see animation):
+This is what the above diagram would look like:
 
 ![sample](misc/diagram.svg)
 
