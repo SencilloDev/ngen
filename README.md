@@ -76,7 +76,7 @@ In this example `schemaString` returns the jsonschema of `PersonResponse{}` usin
 ### Usage
 
 1. Get your micro's name and ID with `nats micro ls`.
-2. Run `go run main.go convert -n <service-name> -i <service-id> -m <method-offset> -t test -d "this is a test"`
+2. Run `ngen generate openapi -n <service-name> -i <service-id> -m <method-offset> -t test -d "this is a test"`
 
 The method offset is the location where the method is stored in the subject. For example `services.FOO.GET` would be 2.
 
