@@ -23,7 +23,7 @@ This is a poc to take NATS micro information and generate a d2 diagram of subjec
 
 This is what the above diagram would look like:
 
-![sample](misc/diagram.svg)
+![diagram](misc/diagram.svg)
 
 ## OpenAPI
 
