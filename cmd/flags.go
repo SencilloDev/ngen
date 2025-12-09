@@ -37,24 +37,31 @@ func bindNatsFlags(cmd *cobra.Command) {
 
 // natsFlags adds the nats flags to the passed in cobra command
 func natsFlags(cmd *cobra.Command) {
-	cmd.Flags().String("nats-jwt", "", "NATS JWT as a string")
-	cmd.Flags().String("nats-seed", "", "NATS seed as a string")
-	cmd.Flags().String("credentials-file", "", "Path to NATS user credentials file")
-	cmd.Flags().String("nats-urls", "nats://localhost:4222", "NATS URLs")
+	cmd.PersistentFlags().String("nats-jwt", "", "NATS JWT as a string")
+	cmd.PersistentFlags().String("nats-seed", "", "NATS seed as a string")
+	cmd.PersistentFlags().String("credentials-file", "", "Path to NATS user credentials file")
+	cmd.PersistentFlags().String("nats-urls", "nats://localhost:4222", "NATS URLs")
 }
 
-func convertFlags(cmd *cobra.Command) {
-	cmd.Flags().StringP("name", "n", "", "Name of the nats micro service")
-	cmd.Flags().StringP("id", "i", "", "ID of the NATS micro service")
+func generateFlags(cmd *cobra.Command) {
+	cmd.PersistentFlags().StringP("name", "n", "", "Name of the nats micro service")
+	cmd.PersistentFlags().StringP("id", "i", "", "ID of the NATS micro service")
+}
+
+func bindGenerateFlags(cmd *cobra.Command) {
+	viper.BindPFlag("name", cmd.Flags().Lookup("name"))
+	viper.BindPFlag("id", cmd.Flags().Lookup("id"))
+}
+
+func openapiFlags(cmd *cobra.Command) {
 	cmd.Flags().StringP("title", "t", "", "Title for OpenAPI spec")
 	cmd.Flags().StringP("description", "d", "", "Description for OpenAPI spec")
 	cmd.Flags().IntP("method-offset", "m", 0, "Offset of the subject to get the HTTP method")
 }
 
-func bindConvertFlags(cmd *cobra.Command) {
-	viper.BindPFlag("name", cmd.Flags().Lookup("name"))
-	viper.BindPFlag("id", cmd.Flags().Lookup("id"))
+func bindOpenapiFlags(cmd *cobra.Command) {
 	viper.BindPFlag("title", cmd.Flags().Lookup("title"))
 	viper.BindPFlag("description", cmd.Flags().Lookup("description"))
 	viper.BindPFlag("method_offset", cmd.Flags().Lookup("method-offset"))
+
 }

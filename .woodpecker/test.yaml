@@ -1,0 +1,8 @@
+steps:
+  - name: test
+    when:
+      event: push
+    image: cgr.dev/chainguard/go:latest
+    commands:
+      - export PATH=$PATH:/root/go/bin
+      - make test
