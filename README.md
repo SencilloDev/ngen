@@ -21,7 +21,7 @@ Animate edges
 
 ### Sample
 
-This is what the above diagram would look like:
+This is what the above diagram would look like (click image to see animation):
 
 ![sample](misc/diagram.svg)
 
