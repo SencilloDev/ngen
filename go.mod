@@ -1,6 +1,6 @@
 module github.com/SencilloDev/ngen
 
-go 1.25.4
+go 1.25.3
 
 require (
 	github.com/nats-io/jsm.go v0.3.0

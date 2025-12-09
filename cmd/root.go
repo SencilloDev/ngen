@@ -14,8 +14,8 @@ var cfgFile string
 var cfg Config
 
 var rootCmd = &cobra.Command{
-	Use:   "natsoapictl",
-	Short: "Convert NATS micro service info into an OpenAPI spec",
+	Use:   "ngen",
+	Short: "NATS micro service diagramming and OpenAPI spec creation",
 }
 var replacer = strings.NewReplacer("-", "_")
 
