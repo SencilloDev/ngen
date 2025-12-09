@@ -1,10 +1,35 @@
-# natsoapi
+# ngen
 
-This is a poc to take NATS micro information and convert it to an OpenAPI spec.
+This is a poc to take NATS micro information and generate a d2 diagram of subjects or convert it to an OpenAPI spec.
+
+
+## D2 Diagrams
+
+### Usage
+
+Generate SVG file
+
+`ngen generate diagram -n sample -i nbmBYG4zjSTFbnvGsYEZ97`
+
+Print diagram to stdout 
+
+`ngen generate diagram -n sample -i nbmBYG4zjSTFbnvGsYEZ97 -p`
+
+Animate edges
+
+`ngen generate diagram -n sample -i nbmBYG4zjSTFbnvGsYEZ97 -p --animate`
+
+### Sample
+
+This is what the above diagram would look like (click image to see animation):
+
+![sample](misc/diagram.svg)
+
+## OpenAPI
 
 This is useful if you are going to expose services from an HTTP gateway such as Caddy.
 
-## Pre Reqs
+### OpenAPI Pre Reqs
 
 Your NATS Micro service(s) will have to follow some specific criteria:
 
@@ -48,7 +73,7 @@ Here is an example endpoint with a group:
 
 In this example `schemaString` returns the jsonschema of `PersonResponse{}` using `github.com/invopop/jsonschema`and marshalStruct returns a JSON marshaled string of the Params.
 
-## Usage
+### Usage
 
 1. Get your micro's name and ID with `nats micro ls`.
 2. Run `go run main.go convert -n <service-name> -i <service-id> -m <method-offset> -t test -d "this is a test"`
@@ -56,7 +81,7 @@ In this example `schemaString` returns the jsonschema of `PersonResponse{}` usin
 The method offset is the location where the method is stored in the subject. For example `services.FOO.GET` would be 2.
 
 
-## Sample
+### Sample
 
 This is what the above example would output:
 

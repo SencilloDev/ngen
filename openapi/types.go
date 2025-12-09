@@ -23,6 +23,10 @@ type Micro struct {
 	Endpoints   []Endpoints `json:"endpoints,omitempty"`
 }
 
+type MicroInfo struct {
+	Info Micro `json:"info"`
+}
+
 type Param struct {
 	Name     string      `json:"name,omitempty"`
 	Required bool        `json:"required"`

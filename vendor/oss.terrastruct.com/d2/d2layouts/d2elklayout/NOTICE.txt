@@ -1,0 +1,7 @@
+elk.js comes from https://github.com/kieler/elkjs
+Currently on v0.8.2
+
+Attribution:
+
+EPL License 2.0
+https://github.com/kieler/elkjs/blob/master/LICENSE.md

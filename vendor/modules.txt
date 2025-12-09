@@ -1,3 +1,21 @@
+# github.com/PuerkitoBio/goquery v1.10.0
+## explicit; go 1.23
+github.com/PuerkitoBio/goquery
+# github.com/alecthomas/chroma/v2 v2.14.0
+## explicit; go 1.19
+github.com/alecthomas/chroma/v2
+github.com/alecthomas/chroma/v2/formatters
+github.com/alecthomas/chroma/v2/formatters/html
+github.com/alecthomas/chroma/v2/formatters/svg
+github.com/alecthomas/chroma/v2/lexers
+github.com/alecthomas/chroma/v2/styles
+# github.com/andybalholm/brotli v1.2.0
+## explicit; go 1.22
+github.com/andybalholm/brotli
+github.com/andybalholm/brotli/matchfinder
+# github.com/andybalholm/cascadia v1.3.2
+## explicit; go 1.16
+github.com/andybalholm/cascadia
 # github.com/antithesishq/antithesis-sdk-go v0.5.0
 ## explicit; go 1.20
 github.com/antithesishq/antithesis-sdk-go/assert
@@ -5,6 +23,20 @@ github.com/antithesishq/antithesis-sdk-go/internal
 # github.com/cpuguy83/go-md2man/v2 v2.0.6
 ## explicit; go 1.12
 github.com/cpuguy83/go-md2man/v2/md2man
+# github.com/dlclark/regexp2 v1.11.4
+## explicit; go 1.13
+github.com/dlclark/regexp2
+github.com/dlclark/regexp2/syntax
+# github.com/dop251/goja v0.0.0-20240927123429-241b342198c2
+## explicit; go 1.20
+github.com/dop251/goja
+github.com/dop251/goja/ast
+github.com/dop251/goja/file
+github.com/dop251/goja/ftoa
+github.com/dop251/goja/ftoa/internal/fast
+github.com/dop251/goja/parser
+github.com/dop251/goja/token
+github.com/dop251/goja/unistring
 # github.com/dustin/go-humanize v1.0.1
 ## explicit; go 1.16
 github.com/dustin/go-humanize
@@ -33,15 +65,26 @@ github.com/expr-lang/expr/vm/runtime
 ## explicit; go 1.17
 github.com/fsnotify/fsnotify
 github.com/fsnotify/fsnotify/internal
+# github.com/go-sourcemap/sourcemap v2.1.4+incompatible
+## explicit
+github.com/go-sourcemap/sourcemap
+github.com/go-sourcemap/sourcemap/internal/base64vlq
 # github.com/go-viper/mapstructure/v2 v2.4.0
 ## explicit; go 1.18
 github.com/go-viper/mapstructure/v2
 github.com/go-viper/mapstructure/v2/internal/errors
+# github.com/golang/freetype v0.0.0-20170609003504-e2365dfdc4a0
+## explicit
+github.com/golang/freetype/raster
+github.com/golang/freetype/truetype
 # github.com/google/go-tpm v0.9.6
 ## explicit; go 1.22
 github.com/google/go-tpm/legacy/tpm2
 github.com/google/go-tpm/tpmutil
 github.com/google/go-tpm/tpmutil/tbs
+# github.com/google/pprof v0.0.0-20240927180334-d43a67379298
+## explicit; go 1.22
+github.com/google/pprof/profile
 # github.com/inconshreveable/mousetrap v1.1.0
 ## explicit; go 1.18
 github.com/inconshreveable/mousetrap
@@ -51,6 +94,12 @@ github.com/klauspost/compress/flate
 github.com/klauspost/compress/internal/le
 github.com/klauspost/compress/internal/race
 github.com/klauspost/compress/s2
+# github.com/lucasb-eyer/go-colorful v1.2.0
+## explicit; go 1.12
+github.com/lucasb-eyer/go-colorful
+# github.com/mazznoer/csscolorparser v0.1.5
+## explicit; go 1.12
+github.com/mazznoer/csscolorparser
 # github.com/minio/highwayhash v1.0.3
 ## explicit; go 1.15
 github.com/minio/highwayhash
@@ -107,6 +156,9 @@ github.com/pelletier/go-toml/v2/internal/characters
 github.com/pelletier/go-toml/v2/internal/danger
 github.com/pelletier/go-toml/v2/internal/tracker
 github.com/pelletier/go-toml/v2/unstable
+# github.com/rivo/uniseg v0.4.7
+## explicit; go 1.18
+github.com/rivo/uniseg
 # github.com/rogpeppe/go-internal v1.13.1
 ## explicit; go 1.22
 # github.com/russross/blackfriday/v2 v2.1.0
@@ -147,6 +199,17 @@ github.com/spf13/viper/internal/features
 # github.com/subosito/gotenv v1.6.0
 ## explicit; go 1.18
 github.com/subosito/gotenv
+# github.com/yuin/goldmark v1.7.4
+## explicit; go 1.19
+github.com/yuin/goldmark
+github.com/yuin/goldmark/ast
+github.com/yuin/goldmark/extension
+github.com/yuin/goldmark/extension/ast
+github.com/yuin/goldmark/parser
+github.com/yuin/goldmark/renderer
+github.com/yuin/goldmark/renderer/html
+github.com/yuin/goldmark/text
+github.com/yuin/goldmark/util
 # go.yaml.in/yaml/v3 v3.0.4
 ## explicit; go 1.16
 go.yaml.in/yaml/v3
@@ -166,8 +229,17 @@ golang.org/x/crypto/nacl/box
 golang.org/x/crypto/nacl/secretbox
 golang.org/x/crypto/ocsp
 golang.org/x/crypto/salsa20/salsa
+# golang.org/x/exp v0.0.0-20250911091902-df9299821621
+## explicit; go 1.24.0
+golang.org/x/exp/constraints
+# golang.org/x/image v0.20.0
+## explicit; go 1.18
+golang.org/x/image/font
+golang.org/x/image/math/fixed
 # golang.org/x/net v0.44.0
 ## explicit; go 1.24.0
+golang.org/x/net/html
+golang.org/x/net/html/atom
 golang.org/x/net/internal/socks
 golang.org/x/net/proxy
 # golang.org/x/sys v0.36.0
@@ -182,11 +254,13 @@ golang.org/x/sys/windows/svc/mgr
 # golang.org/x/text v0.29.0
 ## explicit; go 1.24.0
 golang.org/x/text/cases
+golang.org/x/text/collate
 golang.org/x/text/encoding
 golang.org/x/text/encoding/internal
 golang.org/x/text/encoding/internal/identifier
 golang.org/x/text/encoding/unicode
 golang.org/x/text/internal
+golang.org/x/text/internal/colltab
 golang.org/x/text/internal/language
 golang.org/x/text/internal/language/compact
 golang.org/x/text/internal/tag
@@ -195,11 +269,57 @@ golang.org/x/text/language
 golang.org/x/text/runes
 golang.org/x/text/transform
 golang.org/x/text/unicode/norm
+golang.org/x/text/unicode/rangetable
 # golang.org/x/time v0.13.0
 ## explicit; go 1.24.0
 golang.org/x/time/rate
+# golang.org/x/xerrors v0.0.0-20240903120638-7835f813f4da
+## explicit; go 1.18
+golang.org/x/xerrors
+golang.org/x/xerrors/internal
 # gopkg.in/check.v1 v1.0.0-20201130134442-10cb98267c6c
 ## explicit; go 1.11
 # gopkg.in/yaml.v3 v3.0.1
 ## explicit
 gopkg.in/yaml.v3
+# oss.terrastruct.com/d2 v0.7.1
+## explicit; go 1.24
+oss.terrastruct.com/d2/d2ast
+oss.terrastruct.com/d2/d2compiler
+oss.terrastruct.com/d2/d2exporter
+oss.terrastruct.com/d2/d2format
+oss.terrastruct.com/d2/d2graph
+oss.terrastruct.com/d2/d2ir
+oss.terrastruct.com/d2/d2layouts
+oss.terrastruct.com/d2/d2layouts/d2dagrelayout
+oss.terrastruct.com/d2/d2layouts/d2elklayout
+oss.terrastruct.com/d2/d2layouts/d2grid
+oss.terrastruct.com/d2/d2layouts/d2near
+oss.terrastruct.com/d2/d2layouts/d2sequence
+oss.terrastruct.com/d2/d2lib
+oss.terrastruct.com/d2/d2oracle
+oss.terrastruct.com/d2/d2parser
+oss.terrastruct.com/d2/d2renderers/d2fonts
+oss.terrastruct.com/d2/d2renderers/d2latex
+oss.terrastruct.com/d2/d2renderers/d2sketch
+oss.terrastruct.com/d2/d2renderers/d2svg
+oss.terrastruct.com/d2/d2target
+oss.terrastruct.com/d2/d2themes
+oss.terrastruct.com/d2/d2themes/d2themescatalog
+oss.terrastruct.com/d2/lib/color
+oss.terrastruct.com/d2/lib/compression
+oss.terrastruct.com/d2/lib/font
+oss.terrastruct.com/d2/lib/geo
+oss.terrastruct.com/d2/lib/jsrunner
+oss.terrastruct.com/d2/lib/label
+oss.terrastruct.com/d2/lib/log
+oss.terrastruct.com/d2/lib/shape
+oss.terrastruct.com/d2/lib/svg
+oss.terrastruct.com/d2/lib/syncmap
+oss.terrastruct.com/d2/lib/textmeasure
+oss.terrastruct.com/d2/lib/version
+# oss.terrastruct.com/util-go v0.0.0-20250213174338-243d8661088a
+## explicit; go 1.18
+oss.terrastruct.com/util-go/go2
+oss.terrastruct.com/util-go/xdefer
+oss.terrastruct.com/util-go/xrand
